@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NoteTeacher.MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.01*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0.01*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="image" Source="https://univerico.com/sites/default/files/h5p/content/318/images/backgroundImage-59fde36c6d277.png"  Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4"/>
+        <Button x:Name="Note0" Text="До" Grid.Column="1" Grid.Row="1" Clicked="OnButtonClicked" CornerRadius="20" />
+        <Button x:Name="Note1" Text="Ре" Grid.Column="2" Grid.Row="1" Clicked="OnButtonClicked" CornerRadius="20"/>
+        <Button x:Name="Note2" Text="Ми" Grid.Column="1" Grid.Row="2" Clicked="OnButtonClicked" CornerRadius="20"/>
+        <Button x:Name="Note3" Text="Фа" Grid.Column="2" Grid.Row="2" Clicked="OnButtonClicked" CornerRadius="20"/>
+        <Button x:Name="Note4" Text="Соль" Grid.Column="1" Grid.Row="3" Clicked="OnButtonClicked" CornerRadius="20"/>
+        <Button x:Name="Note5" Text="Ля" Grid.Column="2" Grid.Row="3" Clicked="OnButtonClicked" CornerRadius="20"/>
+        <Button x:Name="Note6" Text="Си" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" Clicked="OnButtonClicked" CornerRadius="20"/>
+    </Grid>
+
+</ContentPage>
